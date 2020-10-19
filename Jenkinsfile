@@ -1,6 +1,8 @@
 pipeline {
     agent any
     environment{
+	     HTTP_PROXY="http://www-proxy-brmdc.us.oracle.com:80"
+         HTTPS_PROXY="http://www-proxy-brmdc.us.oracle.com:80"
          JAVA_HOME="/usr/lib/jvm/jdk-11.0.5/"
          M2_HOME="/opt/apache-maven-3.6.3"
          M2="/opt/apache-maven-3.6.3/bin"
