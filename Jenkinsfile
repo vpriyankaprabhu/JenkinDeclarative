@@ -16,7 +16,7 @@ pipeline {
         stage('Git checkout') {
             steps {
                 echo 'Welcome Git Checkout stage'
-               git 'https://github.com/niwas1711/JenkinDeclarative.git'
+              git branch: 'main', url: 'https://github.com/niwas1711/JenkinDeclarative.git'
             }
         }
         stage('Maven Build') {
