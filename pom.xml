@@ -55,5 +55,23 @@
             </plugin>
         </plugins>
     </build>
-
+    <repositories>
+        <repository>
+            <id>artifactory-slc-prod1</id>
+            <name>fmw-virtual</name>
+            <url>http://artifactory-slc-prod1.oraclecorp.com/artifactory/fmw-virtual</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>artifactory-slc-prod1</id>
+            <name>fmw-virtual</name>
+            <url>http://artifactory-slc-prod1.oraclecorp.com/artifactory/fmw-virtual</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
