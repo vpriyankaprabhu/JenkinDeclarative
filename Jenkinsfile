@@ -5,7 +5,7 @@ pipeline {
          HTTPS_PROXY="http://www-proxy-brmdc.us.oracle.com:80"
 	 no_proxy=".cluster.local,.us.oracle.com,.oraclecorp.com,10.0.0.0/8,100.0.0.0/8,.oraclevcn.com,10.96.0.1"
 	    NO_PROXY=".cluster.local,.us.oracle.com,.oraclecorp.com,10.0.0.0/8,100.0.0.0/8,.oraclevcn.com,10.96.0.1"
-	  NO_PROXY=localhost,127.0.0.0/8,.us.oracle.com,.oraclecorp.com,/var/run/docker.sock,$ip_addr 
+	  NO_PROXY="localhost,127.0.0.0/8,.us.oracle.com,.oraclecorp.com,/var/run/docker.sock,$ip_addr"
          JAVA_HOME="/usr/lib/jvm/jdk-11.0.5/"
          M2_HOME="/opt/apache-maven-3.6.3"
          M2="/opt/apache-maven-3.6.3/bin"
